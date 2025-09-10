@@ -18,9 +18,9 @@ window.addEventListener('scroll', function () {
 
 // 导航菜单激活状态
 const navLinks = document.querySelectorAll('.nav-link');
-navLinks.forEach(link => {
+navLinks.forEach(function (link) {
     link.addEventListener('click', function () {
-        navLinks.forEach(item => item.classList.remove('active'));
+        navLinks.forEach(function (item) { item.classList.remove('active') });
         this.classList.add('active');
     });
 });
